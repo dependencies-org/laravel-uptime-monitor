@@ -83,12 +83,11 @@ class MonitorRepository
     {
         $modelClass = static::determineMonitorModel();
 
-        $monitors = $modelClass
-            ::where(function (Builder $query) {
-                $query
+        $monitors = $modelClass::where(function (Builder $query) {
+            $query
                     ->where('uptime_check_enabled', true)
                     ->where('uptime_status', UptimeStatus::NOT_YET_CHECKED);
-            })
+        })
             ->orWhere(function (Builder $query) {
                 $query
                     ->where('certificate_check_enabled', true)

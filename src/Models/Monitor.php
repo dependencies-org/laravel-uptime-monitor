@@ -2,6 +2,7 @@
 
 namespace Spatie\UptimeMonitor\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\UptimeMonitor\Exceptions\CannotSaveMonitor;
 use Spatie\UptimeMonitor\Models\Enums\CertificateStatus;
@@ -16,21 +17,19 @@ class Monitor extends Model
     use SupportsUptimeCheck;
     use SupportsCertificateCheck;
     use MonitorPresenter;
+    use HasFactory;
 
     protected $guarded = [];
 
     protected $appends = ['raw_url'];
 
-    protected $dates = [
-        'uptime_last_check_date',
-        'uptime_status_last_change_date',
-        'uptime_check_failed_event_fired_on_date',
-        'certificate_expiration_date',
-    ];
-
     protected $casts = [
         'uptime_check_enabled' => 'boolean',
         'certificate_check_enabled' => 'boolean',
+        'uptime_last_check_date' => 'datetime',
+        'uptime_status_last_change_date' => 'datetime',
+        'uptime_check_failed_event_fired_on_date' => 'datetime',
+        'certificate_expiration_date' => 'datetime',
     ];
 
     public function getUptimeCheckAdditionalHeadersAttribute($additionalHeaders): array

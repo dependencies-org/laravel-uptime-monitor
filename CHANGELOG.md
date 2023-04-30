@@ -2,6 +2,55 @@
 
 All notable changes to `laravel-uptime-monitor` will be documented in this file
 
+## 4.2.1 - 2023-02-17
+
+### What's Changed
+
+- Bump dependabot/fetch-metadata from 1.3.4 to 1.3.5 by @dependabot in https://github.com/spatie/laravel-uptime-monitor/pull/332
+- Bump dependabot/fetch-metadata from 1.3.5 to 1.3.6 by @dependabot in https://github.com/spatie/laravel-uptime-monitor/pull/334
+- Laravel 10.x Compatibility by @laravel-shift in https://github.com/spatie/laravel-uptime-monitor/pull/335
+
+### New Contributors
+
+- @laravel-shift made their first contribution in https://github.com/spatie/laravel-uptime-monitor/pull/335
+
+**Full Changelog**: https://github.com/spatie/laravel-uptime-monitor/compare/4.2.0...4.2.1
+
+## 4.2.0 - 2022-10-07
+
+### What's Changed
+
+- Bump dependabot/fetch-metadata from 1.1.1 to 1.2.0 by @dependabot in https://github.com/spatie/laravel-uptime-monitor/pull/313
+- Bump dependabot/fetch-metadata from 1.2.0 to 1.2.1 by @dependabot in https://github.com/spatie/laravel-uptime-monitor/pull/314
+- Bump dependabot/fetch-metadata from 1.2.1 to 1.3.0 by @dependabot in https://github.com/spatie/laravel-uptime-monitor/pull/315
+- Bump dependabot/fetch-metadata from 1.3.0 to 1.3.1 by @dependabot in https://github.com/spatie/laravel-uptime-monitor/pull/319
+- Bump dependabot/fetch-metadata from 1.3.1 to 1.3.3 by @dependabot in https://github.com/spatie/laravel-uptime-monitor/pull/321
+- Add support for php8.1 and Laravel 9. by @Joeri-Abbo in https://github.com/spatie/laravel-uptime-monitor/pull/324
+- Bump dependabot/fetch-metadata from 1.3.3 to 1.3.4 by @dependabot in https://github.com/spatie/laravel-uptime-monitor/pull/327
+
+### New Contributors
+
+- @dependabot made their first contribution in https://github.com/spatie/laravel-uptime-monitor/pull/313
+- @Joeri-Abbo made their first contribution in https://github.com/spatie/laravel-uptime-monitor/pull/324
+
+**Full Changelog**: https://github.com/spatie/laravel-uptime-monitor/compare/4.1.1...4.2.0
+
+## 4.1.1 - 2022-02-13
+
+## What's Changed
+
+- Modify composer requires to illuminate/* alternatives by @mallardduck in https://github.com/spatie/laravel-uptime-monitor/pull/311
+
+## New Contributors
+
+- @mallardduck made their first contribution in https://github.com/spatie/laravel-uptime-monitor/pull/311
+
+**Full Changelog**: https://github.com/spatie/laravel-uptime-monitor/compare/4.1.0...4.1.1
+
+## 4.1.0 - 2022-01-19
+
+- add support for Laravel 9
+
 ## 4.0.0 - 2021-01-14
 
 - typehint all the things
