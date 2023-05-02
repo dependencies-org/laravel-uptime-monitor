@@ -15,7 +15,7 @@ trait SupportsCertificateCheck
     public function checkCertificate(): void
     {
         try {
-            $certificate = SslCertificate::download()->usingPort($this->url->getPort() ?? 443)->forHost($this->url->getHost());
+            $certificate = SslCertificate::download()->usingPort($this->url->getPort() ?? 443)->getCertificates($this->url->getHost())[0] ?? false;
 
             $this->setCertificate($certificate);
         } catch (Exception $exception) {
